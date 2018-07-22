@@ -661,7 +661,7 @@ public final class Helper {
     }
 
     /**
-     * 
+     *
      * @param text
      *            text to analyze
      * @param definitions
@@ -1143,7 +1143,7 @@ public final class Helper {
      * 7. find in all root directories e.g. C:, D:
      * 8. find in temporary directory
      * </pre>
-     * 
+     *
      * @param resource
      * @return
      * @throws IllegalArgumentException

@@ -84,7 +84,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param bs1
      * @param offset1
      * @param len1
@@ -116,7 +116,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param text
      * @param offset1
      * @param end1
@@ -330,7 +330,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param bb
      * @return absolute idx
      */
@@ -339,7 +339,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param bb
      * @return absolute offset idx
      */
@@ -351,7 +351,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param array
      * @param offset
      * @param endIdx
@@ -457,7 +457,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param bb
      * @param offset
      *            absolute
@@ -476,7 +476,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param text
      * @param offset
      * @param len
@@ -489,7 +489,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param text
      * @param offset
      * @param len1
@@ -561,7 +561,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param bb1
      * @param bb2
      * @return
@@ -577,7 +577,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param bb1
      * @param offset1
      * @param l1
@@ -643,7 +643,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param in
      * @param bb
      * @return line without Helper.SEP_NEWLINE_CHAR-character
@@ -680,7 +680,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param fileBB
      * @param lineBB
      * @return line length without Helper.SEP_NEWLINE_CHAR-character, -1 if eof
@@ -733,7 +733,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param in
      * @param bb
      * @return line without Helper.SEP_NEWLINE_CHAR-character
@@ -786,7 +786,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param array
      * @param limit1
      * @param prefix
@@ -810,7 +810,7 @@ public final class ArrayHelper {
 
     /**
      * Stores substring in bb
-     * 
+     *
      * @param bb
      * @param startIdx
      * @return new bb limit
@@ -858,7 +858,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param text
      * @param offset
      * @param limit
@@ -913,7 +913,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param text
      * @param offset
      * @param limit
@@ -1010,7 +1010,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param bb
      * @param offset
      * @param len
@@ -1036,7 +1036,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param data
      * @param offset
      * @param len
@@ -1124,7 +1124,7 @@ public final class ArrayHelper {
     private static final SilentStringDecoder STRING_DECODER_SILENT = new SilentStringDecoder(Helper.CHARSET_UTF8);
 
     /**
-     * 
+     *
      * @param array
      * @param offset
      * @param len
@@ -1144,7 +1144,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param bb
      * @return length of trimmed value, position points to the beginning and limit is set to trimmed end
      */
@@ -1166,7 +1166,7 @@ public final class ArrayHelper {
     }
 
     /**
-     * 
+     *
      * @param array
      * @param offset
      *            absolute
@@ -1215,7 +1215,7 @@ public final class ArrayHelper {
     private static int[] COUNT_ARRAY_INTS = new int[5];
 
     /**
-     * 
+     *
      * @param array
      * @param offset
      *            absolute
@@ -1245,7 +1245,7 @@ public final class ArrayHelper {
 
     /**
      * position is 0 and limit = capacity.
-     * 
+     *
      * @param bb
      * @return
      */
@@ -1306,7 +1306,7 @@ public final class ArrayHelper {
 
     /**
      * continue writing to bb starting from its current limit.
-     * 
+     *
      * @param bb
      */
     public static void extend(ByteBuffer bb) {
