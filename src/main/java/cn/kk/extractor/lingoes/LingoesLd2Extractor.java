@@ -28,11 +28,7 @@ import org.apache.logging.log4j.Logger;
 
 import cn.kk.extractor.lingoes.ArrayHelper.SensitiveStringDecoder;
 
-import jijimaku.errors.UnexpectedCriticalError;
-import jijimaku.utils.FileManager;
-
 public class LingoesLd2Extractor {
-  private static final Logger LOGGER;
   private static final ArrayHelper.SensitiveStringDecoder[] AVAIL_ENCODINGS = {
       new ArrayHelper.SensitiveStringDecoder(Charset.forName("UTF-8")),
       new ArrayHelper.SensitiveStringDecoder(Charset.forName("UTF-16LE")),
@@ -41,10 +37,7 @@ public class LingoesLd2Extractor {
   };
   private static final byte[] TRANSFER_BYTES = new byte[Helper.BUFFER_SIZE];
 
-  static {
-    System.setProperty("logDir", FileManager.getLogsDirectory());
-    LOGGER = LogManager.getLogger();
-  }
+  private static final Logger LOGGER = LogManager.getLogger();
 
   public LingoesLd2Extractor() {
   }
@@ -145,7 +138,7 @@ public class LingoesLd2Extractor {
       }
     }
     LOGGER.error("Cannot find LD2 dictionary data");
-    throw new UnexpectedCriticalError();
+    throw new UnexpectedExtractorError();
   }
 
   private Map<String, String> readDictionary(ByteBuffer dataRawBytes, int offsetData) throws IOException {
@@ -220,7 +213,7 @@ public class LingoesLd2Extractor {
       }
     }
     LOGGER.error("Failed to detect LD2 dictionary encoding");
-    throw new UnexpectedCriticalError();
+    throw new UnexpectedExtractorError();
   }
 
   private void readDefinitionData(final ByteBuffer inflatedBytes, final int offsetWords, final int offsetXml,
